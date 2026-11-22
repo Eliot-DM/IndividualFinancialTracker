@@ -50,7 +50,7 @@ export const ExpensePieChart = () => {
           nameKey="translation"
           labelLine={false}
         >
-          {catPie.map((entry, index) => (
+          {catPie.map((_entry, index) => (
             <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
           ))}
         </Pie>
